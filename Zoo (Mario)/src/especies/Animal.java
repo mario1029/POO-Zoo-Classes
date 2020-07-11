@@ -9,6 +9,9 @@ public abstract class Animal {
 		private String descripcion;
 		private String alimentacion;
 		//Constructor
+		public Animal() {
+			
+		}
 		public Animal(int edad,float peso,float altura,String circulacion, String descripcion, String alimentacion) {
 			this.edad=edad;
 			this.altura=altura; //Altura en cm´s
@@ -18,10 +21,10 @@ public abstract class Animal {
 			this.alimentacion=alimentacion;//Si es carnivoro, hervivoro u omnivoro (o Hematofagia si se alimenta de sangre)
 		}
 		//Metodos abstractos
-		public abstract void moverse();
-		public abstract void dormir();
-		public abstract void reproduccion();
-		public abstract void ver();
+		public abstract String moverse();
+		public abstract String dormir();
+		public abstract String reproduccion();
+		public abstract String ver();
 		
 		//Metodos
 		public String toString() {
