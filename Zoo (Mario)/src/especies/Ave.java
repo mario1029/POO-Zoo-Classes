@@ -2,6 +2,9 @@ package especies;
 
 public class Ave extends Animal implements Volar{
 	private String pico;
+public Ave() {
+		
+	}
 	public Ave(int edad, float peso, float altura, String descripcion, String alimentacion, String pico) {
 		super(edad, peso, altura,"Sangre Caliente",descripcion, alimentacion);
 		this.pico=pico;
@@ -19,24 +22,24 @@ public class Ave extends Animal implements Volar{
 	}
 	//Sobreescritura de metodos
 	@Override
-	public void volar() {
-		System.out.println("Las aves usas su alas para volar.");
+	public String volar() {
+		return"Las aves usas su alas para volar.";
 	}
 	@Override
-	public void moverse() {
-		System.out.println("Aparte de su vuelo las aves pueden agarrarse de ramas con sus patas.");
+	public String moverse() {
+		return "Aparte de su vuelo las aves pueden agarrarse de ramas con sus patas.";
 	}
 	@Override
-	public void dormir() {
-		System.out.println("Las aves suelen dormir en sus nidos");
+	public String dormir() {
+		return"Las aves suelen dormir en sus nidos";
 	}
 	@Override
-	public void reproduccion() {
-		System.out.println("Las aves son ovipaaras por lo cual ponen huevos en sus nidos");
+	public String reproduccion() {
+		return"Las aves son ovipaaras por lo cual ponen huevos en sus nidos";
 	}
 	@Override
-	public void ver() {
-		System.out.println("La vision de un ave supera con creces la de otros animales");
+	public String ver() {
+		return "La vision de un ave supera con creces la de otros animales";
 	}
 	public String toString() {
 		String u ="\n\nNombre Cientifico:"+this.getDescripcion()+"\nEdad:"+this.getEdad()+"\nAlimentacion:"+this.getAlimentacion();
