@@ -1,5 +1,5 @@
 package especies;
 
 public interface Volar {
-	public void volar();
+	public String volar();
 }
